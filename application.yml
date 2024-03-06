@@ -1,0 +1,71 @@
+spring:
+  application:
+    name: nano-service
+  profiles.active: dev
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+
+server:
+  port: 21001
+  servlet:
+    context-path: /nano
+
+
+spring.servlet.multipart.max-file-size: 100MB
+spring.servlet.multipart.max-request-size: 100MB
+spring.main.allow-circular-references: true
+
+
+
+#Debug : enable
+---
+#DEV environment configuration 
+---
+spring:
+  profiles: dev
+  data: 
+      mongodb:
+        authentication-database: admin
+        username: admin
+        password: NAnO!2O23$*m0ng0db!!  # NAnO!2O23$*l!v#em0ng0db!!
+        database: NABI    
+        port: 27017               
+        host: 44.242.158.48   # 18.246.255.118 
+        
+ 
+
+
+aws.config:
+  accessKey: AKIA2VGRMAKSQYQLWIND
+  secretKey: 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
+
+
+  
+NANO_SUPPORT_EMAIL: sahil@1gen.io
+NANO_BANK_ID: nano@upi
+NANO_NPA_EXCEPTION: 30
+NANO_ADMIN_EMAIL: jessica@1gen.io
+NANO_ADMIN_PHONE: 7807595410
+NANO_SUREPASS_TOKEN : eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY4ODM4MzczMywianRpIjoiZGM3NDAzNTYtMmQyYy00ZmM3LTg5MTUtNjg2NWY0M2NjYTRhIiwidHlwZSI6ImFjY2VzcyIsImlkZW50aXR5IjoiZGV2Lm9uZWdlbkBzdXJlcGFzcy5pbyIsIm5iZiI6MTY4ODM4MzczMywiZXhwIjoyMDAzNzQzNzMzLCJ1c2VyX2NsYWltcyI6eyJzY29wZXMiOlsid2FsbGV0Il19fQ.e6wfdCRcCj7z3_ua62W6dDlUxgbaVlJWT9dJpVDIpF4
+NANO_SUREPASS_DOMAIN : https://kyc-api.aadhaarkyc.io
+NANO_CONTACT_US_SUPPORT_EMAIL: sahil@1gen.io
+NANO_CHAT_DOMAIN : https://nms.nano.study
+NANO_ANALYTICS_DOMAIN : https://analytics.nano.study
+NANO_NSCORE_DOMAIN : https://core.nano.study
+NANO_PLAN_OPTION :  single #multiple 
+NANO_APK_LINK :  https://play.google.com/store/apps/details?id=com.onegen.nano_borrower.main 
+INVITE_EXPIRE_TIME: 30
+NSCORE_CHECK: Y
+application.path: http://localhost:21001/nano
+image_path_for_nano: http://localhost:20001
+imgDir: /opt/server/webapps
+chatPortalHostUrl: http://34.223.50.239:8080/
+defaultChatMembersClasses: sahil@1gen.io
+jwt:
+  secret: RUAWm1gmhJ6x0MavXEV2bvHIDNfxXI2s3nCXfD58YYXZW9KYo/OkJmSunGhpJTA4nK53FxVcACt+kf6NhG6VA40gaUGOSnGupPtv8hhLGnKRD9BIjvbhFrMjIkyL4
+  issuer: nano
+  type: JWT
+  audience: nano
+
